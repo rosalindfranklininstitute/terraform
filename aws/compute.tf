@@ -5,7 +5,7 @@ data "aws_ami" "centos8" {
 
   filter {
     name   = "name"
-    values = ["CentOS 8.*"]
+    values = ["Rocky-8*"]
   }
 
   filter {
@@ -13,7 +13,8 @@ data "aws_ami" "centos8" {
     values = ["x86_64"]
   }
 
-  owners = ["125523088429"]
+  owners = ["792107900819"] #Owner ID as stated from https://forums.rockylinux.org/t/rocky-linux-official-aws-ami/3049/25
+        
 }
 
 locals {
